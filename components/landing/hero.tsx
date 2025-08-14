@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Sparkle } from "lucide-react";
 import TailwindCSS from "../icons/tailwind-css";
 import BrowseComponentsButton from "../browse-component-button";
+import BrowseBlocksButton from "../browse-blocks-button";
+import Features from "./features";
 
 const HeroSection = () => {
   return (
@@ -27,7 +29,7 @@ const HeroSection = () => {
               </span>
             </span>
           </h1>
-          <p className="mt-6 text-base md:text-xl text-zinc-300 dark:text-zinc-300 max-w-lg">
+          <p className="mt-6 text-base md:text-xl text-zinc-700 dark:text-zinc-300 max-w-lg">
             Discover{" "}
             <span className="font-semibold">
               100+ hand-crafted premium UI components,
@@ -65,8 +67,11 @@ const HeroSection = () => {
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-3">
             <BrowseComponentsButton />
+            <BrowseBlocksButton />
           </div>
         </MotionDiv>
+
+        <Features />
       </div>
     </div>
   );

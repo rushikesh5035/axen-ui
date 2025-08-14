@@ -54,7 +54,6 @@ const Header = () => {
                 {/* Logo section */}
                 <div className="flex items-center gap-6">
                   <Link href="/" className="flex items-center gap-2">
-                    {/* <Flame className="w-6 h-6 text-green-500 dark:text-green-400" /> */}
                     <Image
                       src={"/logo.png"}
                       alt="logo"
@@ -64,7 +63,7 @@ const Header = () => {
                     />
 
                     <span className="hidden sm:block font-semibold">
-                      Axen Ui
+                      Axen UI
                     </span>
                   </Link>
                   <span className="text-zinc-300 dark:text-zinc-700">|</span>
